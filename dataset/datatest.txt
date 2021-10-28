@@ -9,17 +9,53 @@ Given an integer array A of N integers, find the pair of integers in the array w
 #3
 Given an integer array A of size N.
 You need to find the value obtained by XOR-ing the contiguous subarrays, followed by XOR-ing the values thus obtained. Determine and return this value.
-For example, if A = [3, 4, 5] :
-Subarray    Operation   Result
-3       None            3
-4       None            4
-5       None            5
-3,4   3 XOR 4         7
-4,5   4 XOR 5         1
-3,4,5    3 XOR 4 XOR 5   2
+#4
+Robin buys an integer matrix A of size N x M.
+His mother asked him to perform the following operation exactly once such that the bitwise XOR of the elements is maximized.
+•  Select any row or column of the matrix and decrement each element of the selected row or coloumn by 1.
+Return the maximum value of bitwise XOR of elements after performing the above operation.
 
-Now we take the resultant values and XOR them together:
-3 ⊕ 4 ⊕ 5 ⊕ 7 ⊕ 1⊕ 2 = 6 we will return 6.
+#5
+Robin purchase an integer matrix A of size N x M.
+He wants to make the matrix Diagonally powerful Matrix, but he can only use the below operation:
+•  Select any element, multiply or divide it by 2. Take floor while dividing it by 2.
+Matrix is called Diagonally powerful matrix if all diagonals starting from Top or Left and ending at Bottom or Right is Powerful.
+A diagonal is powerful if bitwise AND of the elements in the diagonal is greater than 1.
+Find and return the minimum number of operations required to convert the matrix into Diagonally powerful Matrix.
+#6
+You are given an integer A. Find the number of ordered pairs (x, y) such that 0 ≤ x, y < 2A and they satisfy the following condition-
+(x ^ y) = (x | y).
+In other words, the bitwise XOR of both these numbers is equal to the bitwise OR of these numbers. Since the answer can be large, calculate it modulo 109 + 7.
+#7
+Write a function that takes an integer and returns the number of 1 bits it has.
+#8
+Reverse the bits of an 32 bit unsigned integer A.
+#9
+Divide two integers without using multiplication, division and mod operator.
+Return the floor of the result of the division.
+#10
+We define f(X, Y) as number of different corresponding bits in binary representation of X and Y. For example, f(2, 7) = 2, since binary representation of 2 and 7 are 010 and 111, respectively. The first and the third bit differ, so f(2, 7) = 2.
+You are given an array of N positive integers, A1, A2 ,…, AN. Find sum of f(Ai, Aj) for all pairs (i, j) such that 1 ≤ i, j ≤ N. Return the answer modulo 109+7.
+#11
+Given a positive integer A, the task is to count the total number of set bits in the binary representation of all the numbers from 1 to A.
+Return the count modulo 109 + 7.
+#12
+Given an integer A find the Ath number whose binary representation is a palindrome.
+NOTE:
+•	Consider the 1st number whose binary representation is palindrome as 1, instead of 0
+•	Do not consider the leading zeros, while considering the binary representation.
+#13
+Given an array of integers A, every element appears twice except for one. Find that single one.
+
+NOTE: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+#14
+Given an array of integers, every element appears thrice except for one which occurs once.
+Find that element which does not appear thrice.
+Note: Your algorithm should have a linear runtime complexity.
+Could you implement it without using extra memory?
+
+
+
 < Two Pointers >
 #1
 Given an one-dimensional unsorted array A containing N integers.
@@ -31,6 +67,108 @@ Given a binary array A and a number B, we need to find length of the longest sub
 #3
 Given an array A of N non-negative numbers and you are also given non-negative number B.
 You need to find the number of subarrays in A having sum less than B. We may assume that there is no overflow.
+#4
+
+Given an array A of positive integers,call a (contiguous,not necessarily distinct) subarray of A good if the number of different integers in that subarray is exactly B.
+Return the number of good subarrays of A.
+#5
+Rishabh and Ojas are on a mission. Their is a bomb which they want to diffuse but the problem is they have to solve a task first which is very difficult for them.
+As you are their friend, they ask you to solve the problem for them.
+Given an integer array A containing N integers.
+You need to find the total number of Scaler Subarrays in A.
+A subarray is called Scaler Subarray if there are exactly B elements in the subarray which occurs atleast 2 times.
+#6
+Given an integer array A consisting of distinct elements.
+You are aksed to create a lexicograhically largest array S = X + reverse(Y) ('+' denotes concatenation) such that it satisfies the following conditions:
+•  len(S) <= len(A)
+•  X is the prefix array of array A and Y is the suffix array of array A.
+Note: Array X or Y can be empty.
+
+
+
+#7
+You are given an integer array A containing N integers.
+You can remove atmost one subarray from it such that the remaining elements must occur atmost two times.
+Find the minimum size of the subarray you need to remove such that remaining elements must occur for atmost two times.
+#8
+You are given an array A of size N.
+A subarray A [ l ... r ] contains all the elements A[l], A[l+1], .... , A[r]. A subarray A [ l ... r ] is called a scaler subarray if max( A [ l ... r ] ) and A[l] + A[r] are congruent modulo B.
+Here, max( A [ l ... r ] ) is the maximum value of this subarray.
+Given an integer n > 1, called a modulus, two integers a and b are said to be congruent modulo n, if n is a divisor of their difference (i.e. if there is an integer k such that
+a − b = k n).
+Find the total number of scaler subarrays of A. Since the answer can be large, return it modulo 109 + 7.
+#9
+Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. 
+Return the sum of the three integers.
+Assume that there will only be one solution
+The sum that is closest to the target is 2. (-1 + 2 + 1 = 2)
+#10
+Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? 
+Find all unique triplets in the array which gives the sum of zero.
+Note:
+Elements in a triplet (a,b,c) must be in non-descending order. (ie, a ≤ b ≤ c)
+The solution set must not contain duplicate triplets.
+#11
+You are given an array of N non-negative integers, A0, A1 ,…, AN-1.
+Considering each array element Ai as the edge length of some line segment, count the number of triangles which you can form using these array values.
+Notes:
+1.	You can use any value only once while forming each triangle. Order of choosing the edge lengths doesn’t matter. Any triangle formed should have a positive area.
+2.	Return answer modulo 109 + 7.
+#12
+Given an array ‘A’ of sorted integers and another non negative integer k, find if there exists 2 indices i and j such that A[i] - A[j] = k, i != j.
+#13
+Given two sorted integer arrays A and B, merge B into A as one sorted array.
+Note: You have to modify the array A to contain the merge of A and B. Do not output anything in your code.
+TIP: C users, please malloc the result into a new array and return the result.
+If the number of elements initialized in A and B are m and n respectively, the resulting size of array A after your code is executed should be m + n
+#14
+Find the intersection of two sorted arrays. OR in other words, Given 2 sorted arrays, find all the elements which occur in both the arrays.
+#15
+You are given with an array of 1s and 0s. And you are given with an integer M, which signifies number of flips allowed.
+Find the position of zeros which when flipped will produce maximum continuous series of 1s.
+For this problem, return the indices of maximum continuous series of 1s in order.
+#16
+You are given 3 arrays A, B and C. All 3 of the arrays are sorted.
+Find i, j, k such that :
+max(abs(A[i] - B[j]), abs(B[j] - C[k]), abs(C[k] - A[i])) is minimized.
+Return the minimum max(abs(A[i] - B[j]), abs(B[j] - C[k]), abs(C[k] - A[i]))
+**abs(x) is absolute value of x and is implemented in the following manner : **
+      if (x < 0) return -x;
+      else return x;
+#17
+Given n non-negative integers a1, a2, ..., an,
+where each represents a point at coordinate (i, ai).
+'n' vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0).
+Find two lines, which together with x-axis forms a container, such that the container contains the most water.
+Your program should return an integer which corresponds to the maximum area of water that can be contained ( Yes, we know maximum area instead of maximum volume sounds weird. But this is 2D plane we are working with for simplicity ).
+Note: You may not slant the container.
+#18
+Given a sorted array A consisting of duplicate elements.
+Your task is to remove all the duplicates and return a sorted array of distinct elements consisting of all distinct elements present in A.
+But, instead of returning an answer array, you have to rearrange the given array in-place such that it resembles what has been described above. Hence, return a single integer, the index(1-based) till which the answer array would reside in the given array A.
+Note: This integer is the same as the number of integers remaining inside A had we removed all the duplicates. Look at the example explanations for better understanding.
+#19
+Remove Duplicates from Sorted Array
+Given a sorted array, remove the duplicates in place such that each element can appear atmost twice and return the new length.
+Do not allocate extra space for another array, you must do this in place with constant memory.
+Note that even though we want you to return the new length, make sure to change the original array as well in place
+#20
+Remove Element
+Given an array and a value, remove all the instances of that value in the array. 
+Also return the number of elements left in the array after the operation.
+It does not matter what is left beyond the expected length.
+#21
+Given an array with n objects colored red, white or blue, 
+sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue.
+Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively.
+Note: Using library sort function is not allowed.
+
+
+
+
+
+
+
 
 <Linked Lists >
 
@@ -42,8 +180,72 @@ NOTE : The length of the list is divisible by K
 #2
 Given a linked list A of length N and an integer B.
 You need to reverse every alternate B nodes in the linked list A
+#3
+Given a Linked List A consisting of N nodes.
+The Linked List is binary i.e data values in the linked list nodes consist of only 0's and 1's.
+You need to sort the linked list and return the new linked list.
+NOTE:
+•	Try to do it in constant space.
 
 
+
+#4
+Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x.
+You should preserve the original relative order of the nodes in each of the two partitions.
+For example,
+Given 1->4->3->2->5->2 and x = 3,
+return 1->2->2->4->3->5.
+#5
+Sort a linked list using insertion sort.
+We have explained Insertion Sort at Slide 7 of Arrays
+Insertion Sort Wiki has some details on Insertion Sort as well.
+#6
+Sort a linked list in O(n log n) time using constant space complexity.
+#7
+Given a linked list A of length N and an integer B.
+You need to find the value of the Bth node from the middle towards the beginning of the Linked List A.
+If no such element exists, then return -1.
+NOTE:
+•	Position of middle node is: (N/2)+1, where N is the total number of nodes in the list.
+
+#8
+Reverse a linked list from position m to n. Do it in-place and in one-pass.
+#9
+Given a singly linked list
+    L: L0 → L1 → … → Ln-1 → Ln,
+reorder it to:
+    L0 → Ln → L1 → Ln-1 → L2 → Ln-2 → …
+You must do this in-place without altering the nodes’ values.
+#10
+Given a singly linked list, determine if its a palindrome. Return 1 or 0 denoting if its a palindrome or not, respectively.
+Notes:
+•	Expected solution is linear in time and constant in space.
+#11
+Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.
+#12
+Merge two sorted linked lists and return it as a new list. 
+The new list should be made by splicing together the nodes of the first two lists, and should also be sorted.
+#13
+Given a sorted linked list, delete all duplicates such that each element appear only once.
+#14
+Given a linked list, remove the nth node from the end of list and return its head.
+#15
+Given a linked list A , reverse the order of all nodes at even positions.
+#16
+Given a linked list, swap every two adjacent nodes and return its head.
+#17
+Given a list, rotate the list to the right by k places, where k is non-negative.
+#18
+You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+Output: 7 -> 0 -> 8
+    342 + 465 = 807
+Make sure there are no trailing zeros in the output list
+So, 7 -> 0 -> 8 -> 0 is not a valid response even though the value is still 807.
+#19
+Problem Description
+Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
+Try solving it using constant additional space.
 
 
 
@@ -74,6 +276,81 @@ Notes:
 The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.
 Given an integer n, return all distinct solutions to the n-queens puzzle. You may return the answer in any order.
 Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space, respectively.
+#4
+Given a string A representing an absolute path for a file (Unix-style).
+Return the string A after simplifying the absolute path.
+Note:
+1.	Absolute path always begin with ’/’ ( root directory ).
+2.	Path will not have whitespace characters.
+#5
+Given a string A denoting an expression. It contains the following operators ’+’, ‘-‘, ‘*’, ‘/’.
+Chech whether A has redundant braces or not.
+Return 1 if A has redundant braces, else return 0.
+Note: A will be always a valid expression.
+#6
+Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+•	push(x) – Push element x onto stack.
+•	pop() – Removes the element on top of the stack.
+•	top() – Get the top element.
+•	getMin() – Retrieve the minimum element in the stack.
+Note that all the operations have to be constant time operations.
+Questions to ask the interviewer :
+Q: What should getMin() do on empty stack? 
+A: In this case, return -1.
+
+Q: What should pop do on empty stack? 
+A: In this case, nothing. 
+
+Q: What should top() do on empty stack?
+A: In this case, return -1
+NOTE : If you are using your own declared global variables, make sure to clear them out in the constructor.
+#7
+Problem Description
+Given a string A denoting a stream of lowercase alphabets. You have to make new string B.
+B is formed such that we have to find first non-repeating character each time a character is inserted to the stream and append it at the end to B. If no non-repeating character is found then append '#' at the end of B.
+#8
+Given an array of integers A. There is a sliding window of size B which 
+is moving from the very left of the array to the very right. 
+You can only see the w numbers in the window. Each time the sliding window moves 
+rightwards by one position. You have to find the maximum for each window. 
+The following example will give you more clarity.
+The array A is [1 3 -1 -3 5 3 6 7], and B is 3.
+Window position	Max
+———————————-	————————-
+[1 3 -1] -3 5 3 6 7	3
+1 [3 -1 -3] 5 3 6 7	3
+1 3 [-1 -3 5] 3 6 7	5
+1 3 -1 [-3 5 3] 6 7	5
+1 3 -1 -3 [5 3 6] 7	6
+1 3 -1 -3 5 [3 6 7]	7
+Return an array C, where C[i] is the maximum value of from A[i] to A[i+B-1].
+Note: If B > length of the array, return 1 element with the max of the array.
+
+#9
+Problem Description
+You are given an array A containing N integers. The special product of each ith integer in this array is defined as the product of the following:
+1.	LeftSpecialValue: For an index i, it is defined as the index j such that A[j]>A[i] and (i>j). If multiple A[j]'s are present in multiple positions, the LeftSpecialValue is the maximum value of j.
+2.	RightSpecialValue: For an index i, it is defined as the index j such that A[j]>A[i] and (j>i). If multiple A[j]'s are present in multiple positions, the RightSpecialValue is the minimum value of j.
+Write a program to find the maximum special product of any integer in the array.
+NOTE: As the answer can be large, output your answer modulo 109 + 7.
+#10
+Given an array, find the nearest smaller element G[i] for every element A[i] in the array such that the element has an index smaller than i.
+More formally,
+    G[i] for an element A[i] = an element A[j] such that 
+    j is maximum possible AND 
+    j < i AND
+    A[j] < A[i]
+Elements for which no smaller element exist, consider next smaller element as -1.
+#11
+Given an array of integers A .
+A represents a histogram i.e A[i] denotes height of the ith histogram's bar. Width of each bar is 1.
+Find the area of the largest rectangle formed by the histogram.
+#12
+Evaluate the value of an arithmetic expression in Reverse Polish Notation.
+Valid operators are +, -, *, /. Each operand may be an integer or another expression.
+#13
+Given an integer array A of non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
+
 
 
 

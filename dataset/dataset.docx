@@ -1,0 +1,512 @@
+<Array>
+
+#1
+Given an integer array A of size N.
+You can pick B elements from either left or right end of the array A to get maximum sum.
+Find and return this maximum possible sum.
+
+#2
+You are in an infinite 2D grid where you can move in any of the 8 directions
+ (x,y) to 
+    (x-1, y-1), 
+    (x-1, y)  , 
+    (x-1, y+1), 
+    (x  , y-1),
+    (x  , y+1), 
+    (x+1, y-1), 
+    (x+1, y)  , 
+    (x+1, y+1) 
+You are given a sequence of points and the order in which you need to cover the points.. Give the minimum number of steps in which you can achieve it. You start from the first point.
+
+#3
+There is a corridor in a Jail which is N units long. Given an array A of size N. The ith index of this array is 0 if the light at ith position is faulty otherwise it is 1.
+All the lights are of specific power B which if is placed at position X, it can light the corridor from [ X-B+1, X+B-1].
+Initially all lights are off.
+Return the minimum number of lights to be turned ON to light the whole corridor or -1 if the whole corridor cannot be lighted.
+
+#4
+Given an array A containing N integers.
+You need to find the maximum sum of triplet ( Ai + Aj + Ak ) such that 0 <= i < j < k < N and Ai < Aj < Ak.
+If no such triplet exist return 0.
+
+#5
+Find the contiguous subarray within an array, A of length N which has the largest sum.
+
+#6
+Given a non-negative number represented as an array of digits, add 1 to the number ( increment the number represented by the digits ).
+The digits are stored such that the most significant digit is at the head of the list.
+
+#7
+You are given an array of N integers, A1, A2 ,…, AN. Return maximum value of f(i, j) for all 1 ≤ i, j ≤ N.
+f(i, j) is defined as |A[i] - A[j]| + |i - j|, where |x| denotes absolute value of x.
+
+#8
+You are given a 1D integer array B containing A integers.
+Count the number of ways to split all the elements of the array into 3 contiguous parts so that the sum of elements in each part is the same.
+Such that : sum(B[1],..B[i]) = sum(B[i+1],...B[j]) = sum(B[j+1],...B[n]) 
+
+#9
+Given a character matrix of size N x M in the form of a string array A of size N where A[i] denotes ith row.
+Each character in the matrix consists any one of the following three characters {'r', 'g', 'b'} where 'r' denotes red color similarly 'g' denotes green color and 'b' denotes blue color.
+You have to find the area of the largest triangle that has one side parallel to y-axis i.e vertical and the color of all three vertices are different.
+
+#10
+You are given a binary string A(i.e. with characters 0 and 1) consisting of characters A1, A2, ..., AN. In a single operation, you can choose two indices L and R such that 1 ≤ L ≤ R ≤ N and flip the characters AL, AL+1, ..., AR. By flipping, we mean change character 0 to 1 and vice-versa.
+Your aim is to perform ATMOST one operation such that in final string number of 1s is maximised.
+If you don't want to perform the operation, return an empty array. Else, return an array consisting of two elements denoting L and R. If there are multiple solutions, return the lexicographically smallest pair of L and R.
+
+#11
+Given an array A of size N. You need to find the sum of Maximum and Minimum element in the given array.
+
+#12
+Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).
+You may assume that the intervals were initially sorted according to their start times.
+
+#13
+Given a collection of intervals, merge all overlapping intervals.
+
+#14
+Given an integer array A of size N.
+You need to check that whether there exist a element which is strictly greater than all the elements on left of it and strictly smaller than all the elements on right of it.
+If it exists return 1 else return 0.
+
+#15
+Given an index k, return the kth row of the Pascal's triangle.
+Pascal's triangle: To generate A[C] in row R, sum up A'[C] and A'[C-1] from previous row R - 1.
+
+#16
+Given an integer A, generate a square matrix filled with elements from 1 to A2 in spiral order.
+
+#17
+Given numRows, generate the first numRows of Pascal's triangle.
+Pascal's triangle : To generate A[C] in row R, sum up A'[C] and A'[C-1] from previous row R - 1.
+
+#18
+Give a N*N square matrix, return an array of its anti-diagonals. 
+Look at the example for more details.
+
+#19
+Given an array of real numbers greater than zero in form of strings.
+Find if there exists a triplet (a,b,c) such that 1 < a+b+c < 2 .
+Return 1 for true or 0 for false.
+
+#20
+Given an integer array A of size N. You need to count the number of special elements in the given array.
+A element is special if removal of that element make the array balanced.
+Array will be balanced if sum of even index element equal to sum of odd index element.
+
+#21
+Given a read only array of n + 1 integers between 1 and n, find one number that repeats in linear time using less than O(n) space and traversing the stream sequentially O(1) times.
+
+#22
+Given an unsorted array, find the maximum difference between the successive elements in its sorted form.
+Try to solve it in linear time/space.
+
+#23
+Given a sorted array A containing N integers both positive and negative.
+You need to create another array containing the squares of all the elements in A and return it in non-decreasing order.
+
+#24
+Given a list of non negative integers, arrange them such that they form the largest number.
+
+#25
+You are given an n x n 2D matrix representing an image.
+Rotate the image by 90 degrees (clockwise).
+You need to do this in place.
+Note that if you end up using an additional array, you will only receive partial score.
+
+#26
+Implement the next permutation, which rearranges numbers into the numerically next greater permutation of numbers for a given array A of size N.
+If such arrangement is not possible, it must be rearranged as the lowest possible order i.e., sorted in an ascending order.
+
+#27
+Given a positive integer n and a string s consisting only of letters D or I, you have to find any permutation of first n positive integer that satisfy the given input string.
+D means the next number is smaller, while I means the next number is greater.
+
+#28
+Given an integer array A, find if an integer p exists in the array such that the number of integers greater than p in the array equals to p.
+
+#29
+Given an array of integers A, sort the array into a wave like array and return it, In other words, arrange the elements into a sequence such that 
+a1 >= a2 <= a3 >= a4 <= a5.....
+
+#30
+A hotel manager has to process N advance bookings of rooms for the next season. 
+His hotel has C rooms. Bookings contain an arrival date and a departure date. 
+He wants to find out whether there are enough rooms in the hotel to satisfy the demand. Write a program that solves this problem in time O(N log N) .
+
+#31
+Given an array A of integers, find the maximum of j - i subjected to the constraint of A[i] <= A[j].
+
+#32
+You are given an array (zero indexed) of N non-negative integers, A0, A1 ,…, AN-1.
+
+Find the minimum sub array Al, Al+1 ,…, Ar so if we sort(in ascending order) that sub array, then the whole array should get sorted.
+If A is already sorted, output -1.
+
+#33
+Given a matrix, A of size M x N of 0s and 1s. If an element is 0, set its entire row and column to 0.
+Note: This will be evaluated on the extra memory used. Try to minimize the space and time complexity.
+
+#34
+Given an unsorted integer array, find the first missing positive integer.
+
+#35
+Given a 2D integer matrix A of size N x N find a B x B submatrix where B<= N and B>= 1, such that sum of all the elements in submatrix is maximum.
+
+#36
+You are given a read only array of n integers from 1 to n.
+Each integer appears exactly once except A which appears twice and B which is missing.
+Return A and B.
+
+#37 
+You're given a read only array of n integers. Find out if any integer occurs more than n/3 times in the array in linear time and constant additional space.
+If so, return the integer. If not, return -1.
+If there are multiple solutions, return any one.
+
+
+
+
+
+<Math>
+
+#1
+Given the position of a Bishop (A, B) on an 8 * 8 chessboard.
+Your task is to count the total number of squares that can be visited by the Bishop in one move.
+The position of the Bishop is denoted using row and column number of the chessboard.
+
+#2
+A items are to be delivered in a circle of size B.
+Find the position where the Ath item will be delivered if we start from a given position C.
+NOTE: Items are distributed at adjacent positions starting from C.
+
+#3
+Given an even number ( greater than 2 ), return two prime numbers whose sum will be equal to given number.
+
+#4
+Hamming distance between two non-negative integers is defined as the number of positions at which the corresponding bits are different.
+Given an array A of N non-negative integers, find the sum of hamming distances of all pairs of integers in the array. Return the answer modulo 1000000007.
+
+#5
+Fizzbuzz is one of the most basic problems in the coding interview world. Try to write a small and elegant code for this problem.
+Given a positive integer A, return an array of strings with all the integers from 1 to N. 
+But for multiples of 3 the array should have “Fizz” instead of the number. 
+For the multiples of 5, the array should have “Buzz” instead of the number. 
+For numbers which are multiple of 3 and 5 both, the array should have “FizzBuzz” instead of the number.
+
+#6
+Given four positive integers A, B, C, D, determine if there’s a rectangle such that the lengths of its sides are A, B, C and D (in any order).
+If any such rectangle exist return 1 else return 0.
+
+#7
+Given a target A on an infinite number line, i.e. -infinity to +infinity.
+You are currently at position 0 and you need to reach the target by moving according to the below rule:
+•  In ith move you can take i steps forward or backward.
+Find the minimum number of moves required to reach the target.
+
+#8
+Given a positive integer which fits in a 32 bit signed integer, find if it can be expressed as A^P where P > 1 and A > 0. A and P both should be integers.
+
+#9
+Given a column title A as appears in an Excel sheet, return its corresponding column number.
+
+#10
+Given a positive integer A, return its corresponding column title as appear in an Excel sheet.
+
+#11
+Determine whether an integer is a palindrome. Do this without extra space.
+A palindrome integer is an integer x for which reverse(x) = x where reverse(x) is x with its digit reversed. Negative numbers are not palindromic.
+
+#12
+You are given an integer N and the task is to reverse the digits of the given integer. Return 0 if the result overflows and does not fit in a 32 bit signed integer.
+
+#13
+Given a numeric string A representing a large number you need to find the next smallest palindrome greater than this number.
+
+#14
+Given 2 non negative integers m and n, find gcd(m, n)
+GCD of 2 integers m and n is defined as the greatest integer g such that g is a divisor of both m and n.
+Both m and n fit in a 32 bit signed integer.
+
+#15
+Given an integer A you need to find the Ath fibonacci number modulo 109 + 7.
+The first fibonacci number F1 = 1
+The first fibonacci number F2 = 1
+The nth fibonacci number Fn = Fn-1 + Fn-2 (n > 2)
+
+#16
+Given an integer A, return the number of trailing zeroes in A!.
+
+#17
+Given a string, find the rank of the string amongst its permutations sorted lexicographically. 
+Assume that no characters are repeated.
+
+#18
+You are given two positive numbers A and B. You need to find the maximum valued integer X such that:
+•	X divides A i.e. A % X = 0
+•	X and B are co-prime i.e. gcd(X, B) = 1
+
+#19
+Given a string, find the rank of the string amongst its permutations sorted lexicographically. 
+Note that the characters might be repeated. If the characters are repeated, we need to look at the rank in unique permutations. 
+
+#20
+Given a number A in a form of string.
+You have to find the smallest number that has same set of digits as A and is greater than A.
+If A is the greatest possible number with its set of digits, then return -1.
+
+#21
+Rearrange a given array so that Arr[i] becomes Arr[Arr[i]] with O(1) extra space.
+
+#22
+Given a set of digits (A) in sorted order, find how many numbers of length B are possible whose value is less than number C.
+
+#23
+There are A cities numbered from 1 to A. You have already visited M cities, the indices of which are given in an array B of M integers.
+If a city with index i is visited, you can visit either the city with index i-1 (i >= 2) or the city with index i+1 (i < A) if they are not already visited. Eg: if N = 5 and array M consists of [3, 4], then in the first level of moves, you can either visit 2 or 5.
+You keep visiting cities in this fashion until all the cities are not visited. Find the number of ways in which you can visit all the cities modulo 10^9+7.
+
+#24
+The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked ‘Finish’ in the diagram below).
+How many possible unique paths are there?
+
+
+
+
+
+<Binary Search>
+
+#1
+Given a bitonic sequence A of N distinct elements, write a program to find a given element B in the bitonic sequence in O(logN) time.
+
+#2
+Given an sorted array A of size N. Find number of elements which are less than or equal to B.
+
+#3
+There is given an integer array A of size N denoting the heights of N trees.
+Lumberjack Ojas needs to chop down B metres of wood. It is an easy job for him since he has a nifty new woodcutting machine that can take down forests like wildfire. However, Ojas is only allowed to cut a single row of trees.
+Ojas's machine works as follows: Ojas sets a height parameter H (in metres), and the machine raises a giant sawblade to that height and cuts off all tree parts higher than H (of course, trees not higher than H meters remain intact). Ojas then takes the parts that were cut off. For example, if the tree row contains trees with heights of 20, 15, 10, and 17 metres, and Ojas raises his sawblade to 15 metres, the remaining tree heights after cutting will be 15, 15, 10, and 15 metres, respectively, while Ojas will take 5 metres off the first tree and 2 metres off the fourth tree (7 metres of wood in total).
+Ojas is ecologically minded, so he doesn't want to cut off more wood than necessary. That's why he wants to set his sawblade as high as possible. Help Ojas find the maximum integer height of the sawblade that still allows him to cut off at least B metres of wood.
+
+#4
+Given a matrix of integers A of size N x M and an integer B.
+Write an efficient algorithm that searches for integar B in matrix A.
+This matrix A has the following properties:
+1.	Integers in each row are sorted from left to right.
+2.	The first integer of each row is greater than or equal to the last integer of the previous row.
+Return 1 if B is present in A, else return 0.
+
+#5
+Given a sorted array of integers A(0 based index) of size N, find the starting and ending position of a given integar B in array A.
+Your algorithm’s runtime complexity must be in the order of O(log n).
+Return an array of size 2, such that first element = starting position of B in A and second element = ending position of B in A, if B is not found in A return [-1, -1].
+
+#6
+Given a sorted array A and a target value B, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+You may assume no duplicates in the array.
+
+#7
+Given a matrix of integers A of size N x M in which each row is sorted.
+Find an return the overall median of the matrix A.
+
+#8
+Given an integer A.
+Compute and return the square root of A.
+If A is not a perfect square, return floor(sqrt(A)).
+
+#9
+Given an array of integers A of size N and an integer B.
+College library has N bags,the ith book has A[i] number of pages.
+You have to allocate books to B number of students so that maximum number of pages alloted to a student is minimum.
+A book will be allocated to exactly one student.
+Each student has to be allocated at least one book.
+Allotment should be in contiguous order, for example: A student cannot be allocated book 1 and book 3, skipping book 2.
+Calculate and return that minimum possible number.
+
+#10
+Given 2 integers A and B and an array of integars C of size N.
+Element C[i] represents length of ith board.
+You have to paint all N boards [C0, C1, C2, C3 … CN-1]. There are A painters available and each of them takes B units of time to paint 1 unit of board.
+Calculate and return minimum time required to paint all boards under the constraints that any painter will only paint contiguous sections of board.
+•	2 painters cannot share a board to paint. That is to say, a board
+cannot be painted partially by one painter, and partially by another.
+•	A painter will only paint contiguous boards. Which means a
+configuration where painter 1 paints board 1 and 3 but not 2 is
+invalid.
+Return the ans % 10000003
+
+#11
+There are many people who believe that the earth is flat and NASA is a scam. They call themselves Flat Earthers. They were already worried that the 6 feet social distancing rule might push some people out of the earth.
+Now, they decided to think about a new issue. Since the earth is flat ( or so they think), let's imagine it as an infinite 2D grid. They have the coordinates of certain points which are orange zones and have some COVID-19 cases reported. Now each day the orange zones become more fatal. After d days, all the locations within a euclidean distance of d of a particular orange zone can be affected by this zone.
+They know N orange zones, each of whose coordinates are given by (A[i][0], A[i][1]). Now, a location is considered a red zone if it is affected by at least B orange zones. You need to find the first day at which the first red zone is reported.
+
+#12
+Implement pow(x, n) % d.
+In other words, given x, n and d,
+find (xn % d)
+Note that remainders on division cannot be negative. In other words, make sure the answer you return is non negative.
+
+#13
+You are given an array A having N integers.
+You have to perform the following steps in a given order.
+1) generate all subarrays of A.
+2) take the maximum element from each subarray of A and insert it into a new array G.
+3) replace every element of G with the product of their divisors mod 1e9 + 7.
+4) sort G in descending order
+You now need to perform Q queries
+In each query, you are given an integer K, where you have to find the Kth element in G.
+
+#14
+There are two sorted arrays A and B of size m and n respectively.
+Find the median of the two sorted arrays ( The median of the array formed by merging both the arrays ).
+
+#15
+Given an array of integers A of size N and an integer B.
+array A is rotated at some pivot unknown to you beforehand.
+(i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2 ).
+You are given a target value B to search. If found in the array, return its index, otherwise return -1.
+You may assume no duplicate exists in the array.
+
+
+
+
+
+<Strings>
+
+#1
+Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+
+#2
+Given a string A consisting of lowercase characters.
+You have to find the number of substrings in A which starts with vowel and end with consonants or vice-versa.
+Return the count of substring modulo 109 + 7.
+
+#3
+Given a string A and integer B, remove all consecutive same characters that have length exactly B.
+
+#4
+Given the array of strings A, you need to find the longest string S which is the prefix of ALL the strings in the array.
+Longest common prefix for a pair of strings S1 and S2 is the longest string S which is the prefix of both S1 and S2.
+
+#5
+The count-and-say sequence is the sequence of integers beginning as follows:  1, 11, 21, 1211, 111221, ... 1 is read off as one 1 or 11. 11 is read off as two 1s or 21.
+21 is read off as one 2, then one 1 or 1211.
+Given an integer n, generate the nth sequence.
+
+#6
+You are given a string S, and you have to find all the amazing substrings of S.
+Amazing Substring is one that starts with a vowel (a, e, i, o, u, A, E, I, O, U).
+
+#7
+Another question which belongs to the category of questions which are intentionally stated vaguely. 
+Expectation is that you will ask for correct clarification or you will state your assumptions before you start coding.
+Implement strStr().
+strstr - locate a substring ( needle ) in a string ( haystack ).
+Try not to use standard library string functions for this question.
+Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+#8
+You are given an array A consisting of strings made up of the letters 'a' and 'b' only.
+Each string goes through a number of operations, where:
+1.  At time 1, you circularly rotate each string by 1 letter.
+2.  At time 2, you circularly rotate the new rotated strings by 2 letters.
+3.  At time 3, you circularly rotate the new rotated strings by 3 letters.
+4.  At time i, you circularly rotate the new rotated strings by i % length(string) letters.
+Eg: String is "abaa"
+1.	 At time 1, string is "baaa", as 1 letter is circularly rotated to the back
+
+2.	 At time 2, string is "aaba", as 2 letters of the string "baaa" is circularly rotated to the back
+
+3.	 At time 3, string is "aaab", as 3 letters of the string "aaba" is circularly rotated to the back
+
+4.	 At time 4, string is again "aaab", as 4 letters of the string "aaab" is circularly rotated to the back
+
+5.	 At time 5, string is "aaba", as 1 letters of the string "aaab" is circularly rotated to the back
+6.	
+After some units of time, a string becomes equal to its original self.
+Once a string becomes equal to itself, it's letters start to rotate from the first letter again (process resets). So, if a string takes t time to get back to the original, at time t+1 one letter will be rotated and the string will be its original self at 2t time.
+You have to find the minimum time, where maximum number of strings are equal to their original self.
+As this time can be very large, give the answer modulo 109+7.
+
+#9
+Given an string A. The only operation allowed is to insert characters in the beginning of the string.
+Find how many minimum characters are needed to be inserted to make the string a palindrome string.
+
+#10
+Given a string A consisting only of lowercase characters, we need to check whether it is possible to make this string a palindrome after removing exactly one character from this.
+If it is possible then return 1 else return 0.
+
+#11
+Given a string A consisting of lowercase characters.
+We need to tell minimum characters to be appended (insertion at end) to make the string A a palindrome.
+
+#12
+Given a string A of parantheses ‘(‘ or ‘)’.
+The task is to find minimum number of parentheses ‘(‘ or ‘)’ (at any positions) we must add to make the resulting parentheses string valid.
+An string is valid if:
+•	Open brackets must be closed by the corresponding closing bracket.
+•	Open brackets must be closed in the correct order.
+
+#13
+Given a string A of size N, find and return the longest palindromic substring in A.
+Substring of string A is A[i...j] where 0 <= i <= j < len(A)
+Palindrome string:
+A string which reads the same backwards. More formally, A is palindrome if reverse(A) = A.
+Incase of conflict, return the substring which occurs first ( with the least starting index).
+
+#14
+Validate if a given string is numeric.
+Examples:
+•	"0" => true
+•	" 0.1 " => true
+•	"abc" => false
+•	"1 a" => false
+•	"2e10" => true
+Return 0 / 1 ( 0 for false, 1 for true ) for this problem
+
+#15
+Implement atoi to convert a string to an integer.
+
+#16
+Given a string containing only digits, restore it by returning all possible valid IP address combinations.
+A valid IP address must be in the form of A.B.C.D, where A,B,C and D are numbers from 0-255. The numbers cannot be 0 prefixed unless they are 0.
+
+#17
+Given an integer A, convert it to a roman numeral, and return a string corresponding to its roman numeral version
+
+#18
+Given a string A representing a roman numeral.
+Convert A into integer.
+
+#19
+Given two binary strings, return their sum (also a binary string).
+
+#20
+Find if Given number is power of 2 or not. 
+More specifically, find if given number can be expressed as 2^k where k >= 1.
+
+#21
+Given two numbers represented as strings, return multiplication of the numbers as a string.
+
+#22
+The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+P.......A........H.......N
+..A..P....L....S....I...I....G
+....Y.........I........R
+And then read line by line: PAHNAPLSIIGYIR
+Write the code that will take a string and make this conversion given a number of rows:
+string convert(string text, int nRows);
+convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR
+
+#23
+Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified. You should pack your words in a greedy approach; that is, pack as many words as you can in each line.
+Pad extra spaces ' ' when necessary so that each line has exactly L characters. Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right. For the last line of text, it should be left justified and no extra space is inserted between words.
+Your program should return a list of strings, where each string represents a single line.
+
+#24
+Given a string A representating json object. Return an array of string denoting json object with proper indentaion.
+Rules for proper indentaion:
+•	Every inner brace should increase one indentation to the following lines.
+•	Every close brace should decrease one indentation to the same line and the following lines.
+•	The indents can be increased with an additional ‘\t’
+

@@ -1,0 +1,81 @@
+< Bit Manipulation >
+
+#1
+Given an integer array A of N integers, find the pair of integers in the array which have minimum XOR value. Report the minimum XOR value.
+
+#2
+Given an integer array A of N integers, find the pair of integers in the array which have minimum XOR value. Report the minimum XOR value.
+
+#3
+Given an integer array A of size N.
+You need to find the value obtained by XOR-ing the contiguous subarrays, followed by XOR-ing the values thus obtained. Determine and return this value.
+For example, if A = [3, 4, 5] :
+Subarray    Operation   Result
+3       None            3
+4       None            4
+5       None            5
+3,4   3 XOR 4         7
+4,5   4 XOR 5         1
+3,4,5    3 XOR 4 XOR 5   2
+
+Now we take the resultant values and XOR them together:
+3 ⊕ 4 ⊕ 5 ⊕ 7 ⊕ 1⊕ 2 = 6 we will return 6.
+< Two Pointers >
+#1
+Given an one-dimensional unsorted array A containing N integers.
+You are also given an integer B, find if there exists a pair of elements in the array whose difference is B.
+Return 1 if any such pair exists else return 0.
+
+#2
+Given a binary array A and a number B, we need to find length of the longest subsegment of ‘1’s possible by changing at most B ‘0’s.
+#3
+Given an array A of N non-negative numbers and you are also given non-negative number B.
+You need to find the number of subarrays in A having sum less than B. We may assume that there is no overflow.
+
+<Linked Lists >
+
+#1
+Given a singly linked list and an integer K, reverses the nodes of the
+list K at a time and returns modified linked list.
+NOTE : The length of the list is divisible by K
+
+#2
+Given a linked list A of length N and an integer B.
+You need to reverse every alternate B nodes in the linked list A
+
+
+
+
+
+
+
+
+<Stacks And Queues>
+#1
+Given a string A consisting only of '(' and ')'.
+You need to find whether parantheses in A is balanced or not ,if it is balanced then return 1 else return 0.
+
+
+
+
+
+#2
+Implement a last-in-first-out (LIFO) stack using only two queues. The implemented stack should support all the functions of a normal stack (push, top, pop, and empty).
+Implement the MyStack class:
+•	void push(int x) Pushes element x to the top of the stack.
+•	int pop() Removes the element on the top of the stack and returns it.
+•	int top() Returns the element on the top of the stack.
+•	boolean empty() Returns true if the stack is empty, false otherwise.
+Notes:
+•	You must use only standard operations of a queue, which means that only push to back, peek/pop from front, size and is empty operations are valid.
+•	Depending on your language, the queue may not be supported natively. You may simulate a queue using a list or deque (double-ended queue) as long as you use only a queue's standard operations.
+ 
+#3
+The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.
+Given an integer n, return all distinct solutions to the n-queens puzzle. You may return the answer in any order.
+Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space, respectively.
+
+
+
+
+

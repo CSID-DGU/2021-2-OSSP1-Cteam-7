@@ -6,8 +6,6 @@ Fizzbuzz is one of the most basic problems in the coding interview world. Try to
 
 Given 2 non negative integers m and n, find gcd(m, n) . GCD of 2 integers m and n is defined as the greatest integer g such that g is a divisor of both m and n. Both m and n fit in a 32 bit signed integer.
 
-You are given an integer N and the task is to reverse the digits of the given integer. Return 0 if the result overflows and does not fit in a 32 bit signed integer.
-
 Given a string, find the rank of the string amongst its permutations sorted lexicographically. Note that the characters might be repeated. If the characters are repeated, we need to look at the rank in unique permutations.
 
 Given a number A in a form of string. You have to find the smallest number that has same set of digits as A and is greater than A. If A is the greatest possible number with its set of digits, then return -1.

@@ -1,0 +1,11 @@
+Given an integer array A of N integers, find the pair of integers in the array which have minimum XOR value. Report the minimum XOR value.
+Given an integer array A of N integers, find the pair of integers in the array which have minimum XOR value. Report the minimum XOR value.
+Given an integer array A of size N.  You need to find the value obtained by XOR-ing the contiguous subarrays, followed by XOR-ing the values thus obtained. Determine and return this value.
+Given a positive integer A, the task is to count the total number of set bits in the binary representation of all the numbers from 1 to A.
+Given a positive integer A, the task is to count the total number of set bits in the binary representation of all the numbers from 1 to A.
+Given an array of integers A, every element appears twice except for one. Find that single one.
+Given an array of integers, every element appears thrice except for one which occurs once.Find that element which does not appear thrice.
+Divide two integers without using multiplication, division and mod operator.Return the floor of the result of the division.
+Reverse the bits of an 32 bit unsigned integer A.
+Write a function that takes an integer and returns the number of 1 bits it has.
+

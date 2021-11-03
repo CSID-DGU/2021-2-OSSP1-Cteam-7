@@ -7,9 +7,9 @@ Using Natural Language Processing method to classify the problems in large quant
 This repo shows our implementations with four major parts when completed:
 
 ### Search and create problem datasets
-Almost Done
+Done
 ### Setup transformer models for Questions and Candidate keywords/keyphrases embeddings.
-Implementing Model callup backends.
+Done
 ### Calculate Keywords for each Question and store in question-keyword dict format.
 Awaiting implementing.
 ### Create “Question Finder program” for user searching Questions using one-shot keywords or batch inference interface.

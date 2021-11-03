@@ -11,11 +11,11 @@ def select_backend(embedding_model) -> BaseEmbedder:
     
 
     if isinstance(embedding_model, BaseEmbedder):
-        print('hitbaseemb')
+        # print('hitbaseemb')
         return embedding_model
 
     if isinstance(embedding_model, str):
-        print('stransformer')
+        # print('stransformer')
         return SentenceTransformerBackend(embedding_model)
-    print('hit')
+    # print('hit')
     return SentenceTransformerBackend("all-MiniLM-L6-v2")

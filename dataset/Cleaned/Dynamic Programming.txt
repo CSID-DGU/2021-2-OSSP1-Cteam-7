@@ -70,7 +70,6 @@ Each move, you may take an egg (if you have an unbroken one) and drop it from an
 Your goal is to know with certainty what the value of C is.
 What is the minimum number of moves that you need to know with certainty what C is, regardless of the initial value of C
 
-#33
 Given a tree with N nodes numbered from 1 to N.
 Each edge is bi-directional and has a certain weight assigned to it.
 You are given Q queries, in each query you are given two integers u and v and you are required to find the maximum weighted edge in a simple path from u to v.

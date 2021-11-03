@@ -3,7 +3,6 @@ import os
 import time
 
 from Model.model import CoreBERT
-from DataSpider import peek_dataset
 from entre_token import evaluate_from_token
 from utilities import one_shot_inf, batch_inf, retrieve_one_shot, retrieve_batch
 

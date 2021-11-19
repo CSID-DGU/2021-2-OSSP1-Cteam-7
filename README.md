@@ -11,7 +11,7 @@ In order to compare performances between transformer models, we set 100 question
 ![image](https://user-images.githubusercontent.com/90604378/142633965-08cbf384-8f31-4365-ba8b-23b286ab2dc2.png)
 
 
-According to the benchmark,  “distill_bert_v1” shows best keyword extraction performance on our dataset. However, this does not mean that it is the best model in any scope. In fact, each model may achieve high score on different datasets. It is difficult to say that which is the best model. In previous studies, the weighted benchmark results of the most common datasets are usually used to determine whether a model has SOTA performance. In this article, our test results only represent the benchmark on our local dataset. 
+According to the benchmark,  “distill_bert_v1” shows best keyword extraction performance on our dataset. However, this does not mean that it is the best model in any scope. In fact, each model may achieve high scores on different datasets. It is difficult to say that which is the best model. In previous studies, the weighted benchmark results of the most common datasets are usually used to determine whether a model has SOTA performance. In this paper, our test results only represent the benchmark on our local dataset. 
 
 
 This repo shows our implementations with four major parts:

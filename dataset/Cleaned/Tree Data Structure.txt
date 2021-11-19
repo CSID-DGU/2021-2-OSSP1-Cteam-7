@@ -12,7 +12,6 @@ Given a binary tree, find its maximum depth.The maximum depth of a binary tree i
 
 Given a binary tree containing digits from 0-9 only, each root-to-leaf path could represent a number.An example is the root-to-leaf path 1->2->3 which represents the number 123.Find the total sum of all root-to-leaf numbers % 1003.
 
-
 Given a binary treestruct TreeLinkNode {TreeLinkNode *left;TreeLinkNode *right;TreeLinkNode *next; }Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL.Initially, all next pointers are set to NULL.
 
 Given a binary tree A of integers. Return an array of integers representing the right view of the Binary tree.Right view of a Binary Tree: is a set of nodes visible when the tree is visited from Right side.

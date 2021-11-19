@@ -35,7 +35,7 @@ def launchpad(enterprise_user):
         if operation == '2':
             batch_inf(bert_model, enterprise_user)
         if operation == '3':
-            retrieve_one_shot(enterprise_user)
+            retrieve_one_shot()
         if operation == '4':
             retrieve_batch(enterprise_user)
         if operation == 'clear':

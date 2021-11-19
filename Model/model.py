@@ -78,7 +78,6 @@ class CoreBERT:
                       to the input document
         """
         try:
-            # Extract Words
             if candidates is None:
                 if vectorizer:
                     count = vectorizer.fit([doc])
@@ -86,16 +85,13 @@ class CoreBERT:
                     count = CountVectorizer(ngram_range=keyphrase_ngram_range, stop_words=stop_words).fit([doc])
                 candidates = count.get_feature_names()
 
-            # Extract Embeddings
             doc_embedding = self.model.embed([doc])
             candidate_embeddings = self.model.embed(candidates)
 
-            # Guided KeyBERT with seed keywords
             if seed_keywords is not None:
                 seed_embeddings = self.model.embed([" ".join(seed_keywords)])
                 doc_embedding = np.average([doc_embedding, seed_embeddings], axis=0, weights=[3, 1])
 
-            # Calculate distances and extract keywords
             if use_mmr:
                 keywords = mmr(doc_embedding, candidate_embeddings, candidates, top_n, diversity)
             elif use_maxsum:

@@ -29,20 +29,38 @@ def peek_dataset(dataset_path='dataset/Cleaned/*.txt', shortest_fix=100, detaile
 def peek_one_shot(dataset, shortest_fix):
     dropped = 0
     questions = []
+    question_cache = ''
 
     with open(dataset) as f:
         line = f.readline()
         while line:
             if line != '\n':
-                if len(line) < shortest_fix:
+                question_cache = question_cache + line.strip('\n')
+            else:
+                if len(question_cache) < shortest_fix:
                     dropped += 1
                     line = f.readline()
+                    if line == None:
+                        if len(question_cache) < shortest_fix:
+                            dropped += 1
+                            continue
+                        questions.append(question_cache)
+                        question_cache = ''
                     continue
-                questions.append(line.strip('\n'))
+                questions.append(question_cache)
+                question_cache = ''
             line = f.readline()
+            # print (line, type(line))
+            if line == '':
+                if len(question_cache) < shortest_fix:
+                    dropped += 1
+                questions.append(question_cache)
+                question_cache = ''
+        
+                
     
     return questions, dropped
 
 
 if __name__ == "__main__":
-    peek_dataset(detailed=False)
+    peek_dataset(detailed=True)

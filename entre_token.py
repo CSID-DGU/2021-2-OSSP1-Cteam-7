@@ -10,7 +10,7 @@ def evaluate_from_token(enterprise_token):
     construct_tokens()
     if enterprise_token in tokens:
         print('Passed. \tEnterprise Mode')
-        return 'Enterprise'
+        return 1#'Enterprise'
     else:
         print('General')
-        return 'General Mode'
+        return 0#'General Mode'

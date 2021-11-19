@@ -13,4 +13,6 @@ Done
 ### Calculate Keywords for each Question and store in question-keyword dict format.
 Done
 ### Create “Question Finder program” for user searching Questions using one-shot keywords or batch inference interface.
-Awaiting implementing.
+Done
+
+That's all folks.
